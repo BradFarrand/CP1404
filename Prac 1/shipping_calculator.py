@@ -8,11 +8,10 @@ while number_of_items > count_items:
     count_items = count_items + 1
     prices_of_items.append(price_of_item)
 print("You have purchased", number_of_items, "items.")
-for i in (prices_of_items):
-    print("Your item cost $" + str(i))
-calculate_total = sum(prices_of_items)
-if calculate_total > 100:
-    calculate_total = calculate_total * 0.9
-    print("Your total price for", number_of_items, "items is", "$" + str(calculate_total))
-else:
-    print("Your total price for", number_of_items, "items is", "$" + str(calculate_total))
+for price in (prices_of_items):
+    print("Your item cost $" + str(price))
+total = sum(prices_of_items)
+if total > 100:
+    total = total * 0.9
+
+print("Your total price for", number_of_items, "items is $" + str(total))

@@ -2,7 +2,7 @@ TARIFF_11 = 0.244618
 TARIFF_31 = 0.136928
 
 get_tariff = int(input("Please enter which tariff you\'re using: 11 or 31"))
-if get_tariff != 11 or get_tariff != 31:
+while get_tariff != 11 and get_tariff != 31:
     get_tariff = int(input("Invalid tariff. Please enter which tariff you\'re using: 11 or 31"))
 get_daily_usage = float(input("Please enter daily use in kWh"))
 get_days = int(input("Please enter number of days in the billing period."))
